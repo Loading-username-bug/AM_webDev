@@ -3,18 +3,34 @@
     <head>
         <title>Advanced HTNL Notes</title>
         <meta charset="UTF-8">
+        <style>
+            body{color:darkmagenta; 
+            background-color:lightsteelblue ; border-radius:4px; width: 25%; height: 100px; font-size: lem;}
+            h1{
+                text-decoration:darkslateblue underline; text-align:center
+            }
+            #even{
+                color:aqua
+            }
+            .numbered{
+                font-size: 20px;
+                border: solid 10px olivedrab
+            }
+            
+            <!-- Color is property body{} is the selector/html tag -->
+        </style>
     </head>
     <body>
             <h1> Advanced HTML Noted</h1>
             <h3>Lists:</h3>
-            <ol>
+            <ol type="i" class="numbered">
                 <li>This is the first thing</li>
                 <li>This is the second thing</li>
                 <li>This is the third thing</li>
             </ol>
             <ul>
                 <li><a href="https://www.stockvault.net/data/2016/05/20/198875/preview16.jpg" target blank>Apple</a></li>
-                <li>Bannana</li>
+                <li id="even">Bannana</li>
                 <li>Orange</li>
                 <li>Kiwi</li>
             </ul>
@@ -30,7 +46,7 @@
             <div>
             <h3>Attributes:</h3>
             <img src="https://globalsummitguide.com/wp-content/uploads/2026/07/AdobeStock_1146206325-scaled.jpeg" alt="Mount Timp" width="200px">
-            <img src="mount_timp.jpg" alt="Cloudy timp" width="200px">
+            <img src="mount_timp.jpg" alt="Cloudy timp" width="50%">
             <p>Image from <a href="https://www.facebook.com/groups/4063149567032142/posts/36612679681652376/"target blank>Facebook</a></p><!---a tag for links-->
             </div>
         </body>
