@@ -15,39 +15,55 @@
                 color:rgb(64, 2, 70);
                 text-decoration-line: underline;
                 font-family: "Creepster", system-ui;
-  font-weight: 400;
-  font-style: normal;;
+                font-weight: 400;
+                font-style: normal;
+                margin: 20px;
+                padding: 20px;
             }
             body{
                 background-color:rgb(255, 154, 0);
+                margin: 20px;
+                padding: 0px
             }
             
             #history{
                 color: rgb(35, 7, 66);
                 font-family: "Creepster", system-ui;
-  font-weight: 400;
-  font-style: normal;
+                font-weight: 400;
+                font-style: normal;
+                margin: 10px;
+                padding: 5px
             }
             #now{
                 color: rgb(35, 7, 66);
                 font-family: "Creepster", system-ui;
-  font-weight: 400;
-  font-style: normal;
+                font-weight: 400;
+                font-style: normal;
+                margin: 10px;
+                padding: 5px;
             }
             #other{
-                 font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: normal;
+                    font-family: "Instrument Serif", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    margin: 20px;
+                    padding: 5px;
+                    
             }
             #vibes{
                 font-family: "Creepster", system-ui;
+                margin: 10px;
+                padding: 40px 
             }
             #image1{
                 width: 20%;
+                margin: 20px;
+                padding: 5px;
             }
             #image2{
-                width: 3
-                0%;
+                width: 40%;
+                margin: 10px;
+                padding: 10px;
             }
             
             #box{
@@ -55,19 +71,26 @@
                 width: 20%;
                 height: 20%;
                 border: solid black;
-                
+                margin: 20px;
+                padding: 40px;
             }
-          
+            #moveimg2{
+                display: flex;
+                justify-content: flex-end;
+            }
+          #moveimg2from{
+            display: flex;
+            justify-content: flex-end;
+          }
 
         </style>
     </head>
     <body> <!-- Stuff the user sees-->
         <h1 id="infotitle">Info on Halloween</h1> 
         <h3 id="history">The history of Halloween</h3> <!--Should always start with the header things examples: <h1> <h2> etc-->
-        <p>
-The oldest record we have of this holiday came from a tribe called the Celts. They originally made it as a celebration of the eve of the new year. Their calender would restart at October. This was said to be the day the the land of the dead and the land of the living mixed and the differences between them became blurred. The reason to why they thought that this was whn the dead came back to life was because after October it would get very cold and people would get sick and die. Their crops also died around this time. To celebrate they would Wear animal skins and predict ones future around large camp fires. </p> <!-- <p> is general text-->
-        <h3 id="now">Halloween Nowdays</h3>
-        <p> Nowdays during Halloween instead of dressing in animal skins we wear costumes, and instead of telling fortunes we tell scary stories. Kids will Trick-or-Treat and go to others doors, knock, and get candy. Sometimes if ther person doesn't give candy childeren will throw eggs at their house. All very fun.</p>
+        <p>The oldest record we have of this holiday came from a tribe called the Celts. They originally made it as a celebration of the eve of the new year. Their calender would restart at October. This was said to be the day the the land of the dead and the land of the living mixed and the differences between them became blurred. The reason to why they thought that this was whn the dead came back to life was because after October it would get very cold and people would get sick and die. Their crops also died around this time. To celebrate they would Wear animal skins and predict ones future around large camp fires. </p> <!-- <p> is general text-->
+        <h3 id="now">Halloween Nowadays</h3>
+        <p> Nowadays during Halloween instead of dressing in animal skins we wear costumes, and instead of telling fortunes we tell scary stories. Kids will Trick-or-Treat and go to others doors, knock, and get candy. Sometimes if ther person doesn't give candy childeren will throw eggs at their house. All very fun.</p>
         <div id="box">
         <h2 id="other">Other fun holidays</h2>
         <ul>
@@ -80,7 +103,11 @@ The oldest record we have of this holiday came from a tribe called the Celts. Th
         <h3 id="vibes">Halloween vibes:</h3>
         <img src="https://cdn11.bigcommerce.com/s-km30nn7y/product_images/uploaded_images/pair-of-lighted-carved-pumpkins-image-from-rawpixel-id-3302497-1x1.jpg" alt="Pumpkins" id="image1">
         <p>Image from <a href="https://www.christmascentral.com/blog/6-methods-for-preserving-your-pumpkins/?srsltid=AYCX9vLaVZVR8DGFnH60v5RtQZhBRcUTBBmU5TFm9tNvWY7lwlcxrs2E"target blank>Cristmas Central</a></p><!---a tag for links-->
+    <div id="moveimg2">
         <img src="https://cdn.stocksnap.io/img-thumbs/960w/halloween-candy_ECICLHJMAZ.jpg" alt="Halloween candy" id="image2">
+    </div>
+    <div id="moveimg2from">
         <p>Image from <a href="https://www.stocksnap.io/photo/halloween-candy-ECICLHJMAZ"target blank>Stock Snap</a></p><!---a tag for links-->
+    </div>
     </body>
 </html>
