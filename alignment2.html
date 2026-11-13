@@ -1,42 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>Alignment</title>
+        <title>Alignment Notes</title>
         <meta charset="UTF-8">
         <style>
             button{
-                padding: 20px;
-                margin: 8px;
+                padding:20px;
+                margin-left:45%;
             }
-            #box, #boxtwo{
-                width: 75px;
-                height: 75px;
-                background-color: blue;
-                color: azure;
-                text-align: center;
+            #box, #box2{
+                width:75px;
+                height:75px;
+                background-color:darkslategrey;
+                color:azure;
+                text-align:center;
             }
             #box-wrapper{
-                display: grid;
+                display:grid;
                 grid-template-columns: 1fr 200px 1fr;
                 gap: 5px;
             }
             #flex-wrapper{
                 display: none;
-                flex: ;
+                display:flex;
                 flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
+                justify-content:space-between;
                 flex-wrap: wrap;
+            }
+            #showMore{
+
+
+            }
+            #thanksgiving{
+                width: 200px
             }
         </style>
     </head>
     <body>
         <h1>Alignment Notes</h1>
+        <img src="https://www.dinneratthezoo.com/wp-content/uploads/2019/08/thanksgiving-turkey-4.jpg" alt="thanksgiving"; id="thanksgiving" onmouseout="changeImage()">
         <div id="box-wrapper">
-            <div id="box" onmouseover= "dissapear()" onmouseout="appear()">
+            <div id="box" onmouseover="disappear()" onmouseout="appear()">
                 <p>Box 1</p>
             </div>
-            <div id="boxtwo">
+            <div id="box2">
                 <p>Box 2</p>
             </div>
             <div id="box">
@@ -46,7 +53,7 @@
                 <p>Box 4</p>
             </div>
         </div>
-          <div id="flex-wrapper">
+        <div id="flex-wrapper">
             <div id="box">
                 <p>Box 1</p>
             </div>
@@ -61,31 +68,43 @@
             </div>
         </div>
         <input type="color" id="colorPicker">
-        <button onclick="color()">Click Me</button>
-        <button onclick="show()" id="showMore">Show More</button>
-        <script>
-            //MAKES IT INTERACTIVE
-            function color(){
-                let newColor = document.getElementById("colorPicker").value 
-                document.getElementById("box").style.backgroundColor = newColor
-            }
-            function dissapear(){
-                document.getElementById("boxtwo").style.display = 'none'
-            }
-            function appear(){
-                document.getElementById("boxtwo").style.display = "block"
-            }
-            function show(){
-                let element = document.getElementByID("flex-wrapper")
-                if (element.style.display == "flex"){
-                    element.style.display = "none"
-                    document.getElementById("showMore").innerHTML = "Show Less"
-                }else{
-                    element.style.display = "flex"
-                    document.getElementById("showMore").innerHTML = "Show Less"
+        <br>
+            <button onClick="color()">Click me</button>
+            <button id="showMore" onClick="show()">Show More</button>
+            <script>
+                let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszioYFsjJVN9j-IccBx-VhqTi4UgLaOYfkGCA7pYosQ&s=10","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUlCDchpIK52SOylIiusAmaUbOKe0HQwe50fRkdFIJTA&s=10","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzEITSxSIj5umBSV82MxAQ70l5g7EhGw4YAhN2R9RDbA&s=10","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9nPasnLGnUK13F6amgggFEBz7SrcsiKAThrLmHqwZNw&s=10","https://www.dinneratthezoo.com/wp-content/uploads/2019/08/thanksgiving-turkey-4.jpg",]
+                let current = 0
+                function changeImage(){
+                    current += 1
+                    if (current > 3){
+                        current = 0
+                    }
+                    document.getElementById("thanksgiving").src = images[current]
                 }
-            }
-        </script>
+                //makes the webpage interactive
+                function color(){
+                    let newColor = document.getElementById("colorPicker").value
+                    document.getElementById("box").style.backgroundColor = newColor
+                }
+                function disappear(){
+                    document.getElementById("box2").style.display = 'none'
+                }
+                function appear(){
+                    document.getElementById("box2").style.display = 'block'
+                }
+                function show(){
+                    let element = document.getElementById("flex-wrapper")
+                    if (element.style.display == "flex"){
+                        element.style.display = "none"
+                        document.getElementById("showMore").innerHTML = "show More"
+                    }else{
+                        element.style.display = "flex"
+                        document.getElementById("showMore").innerHTML = "Show Less"
+                    }
+                }
+            </script>
     </body>
 </html>
+
+
 
