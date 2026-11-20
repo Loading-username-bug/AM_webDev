@@ -8,6 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <style>               
              body{
+                display:flex;
+                flex-direction: column;
                 background-color:rgb(197, 173, 216);
                 margin: 20px;
                 padding: 0px
@@ -20,7 +22,7 @@
                 font-style: normal;
                 margin: 20px;
                 padding: 20px;
-
+                
             }
             #tiimage{
                 width: 100%;
@@ -29,19 +31,74 @@
 
             }
             #oneimg{
-                width: 50%;
-                height: 10%;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width:250px;
+                height: 250px;
             }
              #twoimg{
-                width: 50%;
-                height: 15%;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width:250px;
+                height: 250px;
             }
             #threeimg{
-                width: 50%;
-                height: 15%;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width:250px;
+                height: 250px;
             }
-
-           
+            #images{
+                display:flex;
+                justify-content: space-between;
+                padding-right: 80px;
+            }
+            #oneimage{
+                width:330px;
+                height: 250px;
+                border: solid 4px lightgrey;
+                border-radius: 5px;
+            }
+            #twoimage{
+                width:330px;
+                height: 250px;
+                border: solid 4px lightgrey;
+                border-radius: 5px;
+            }
+            #threeimage{
+                width:330px;
+                height: 250px;
+                border: solid 4px lightgrey;
+                border-radius: 5px;
+            }
+           #box{
+            padding-top: 50px;
+           }
+            #boxtwo{
+                background-color:rgb(114, 78, 122);
+                width: 30%;
+                height: 90%;
+                border-radius: 8px;
+                margin: 20px;
+                padding:10px;
+                justify-content: center;
+                justify-content: space-between;
+            }
+            #line{
+                height:0px;
+                border: solid 2px lightgrey;
+            }
+            #textone{
+                background-color:rgb(114, 78, 122);
+                border-radius: 8px;
+            }
+            #texttwo{
+                background-color:rgb(114, 78, 122);
+                border-radius: 8px;
+            }
         </style>
     </head>
     <body>
@@ -49,33 +106,36 @@
             <img src="https://www.bestwestern.com/content/dam/best-western/hero-image/destinations/united-states/utah/canyonlands-national-park-1140x300.jpg" id="tiimage">
             <p>Image from <a href="https://www.bestwestern.com/en_US/hotels/destinations/united-states/rocky-mountain/hotels-in-utah/things-to-do/outdoor-adventure/national-parks/canyonlands-national-park.html"target blank>Best Western</a></p>
         </div>
-        <h1 id="title">Dead Horse Point</h1> 
-        <hr/>
+        <h1 id="title">Dead Horse Point<hr id="line"></h1> 
+        
         <h3 id="history">All About</h3>
-        <p>This National Park is a definitly worth the trip. While you are there you will see 2,000ft worth of sheer cliff that reveal red rocks, winding rivers, magnificent veiws of sunsets and a lifes worth of star gazing. Lots of adventure and learning experiences. Garenteed to change you life.</p> <!-- <p> is general text-->
+        <p id="textone">This National Park is a definitly worth the trip. While you are there you will see 2,000ft worth of sheer cliff that reveal red rocks, winding rivers, magnificent veiws of sunsets and a lifes worth of star gazing. Lots of adventure and learning experiences. Garenteed to change you life.</p> <!-- <p> is general text-->
         <h3 id="now">Why you should plan your trip now</h3>
-        <p> This is a life changing experiance guarenteed. A very family friendly area and a good escape from stress. You are guarenteed to have a fun time while your there. With all of the fun activities to do, how could you not? I mean just look at these veiws, absolutely breathtaking.</p>
-        <div id="oneimg">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhSNtaT88mq7q_GahntZyMyWpywgf5CjWSGVzyfsWDtxwP1rOHxtAMaLc&s=10 alt=" id="oneimg">
-            <p>Image from <a href="https://www.facebook.com/mjbauerphotography/posts/this-sunset-at-deadhorse-state-park-in-utah-stands-out-as-one-of-the-most-memora/1494761902650430/"target blank>Fasebook</a></p>
+        <p id="texttwo"> This is a life changing experiance guarenteed. A very family friendly area and a good escape from stress. You are guarenteed to have a fun time while your there. With all of the fun activities to do, how could you not? I mean just look at these veiws, absolutely breathtaking.</p>
+        <div id="images">
+            <div id="oneimg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhSNtaT88mq7q_GahntZyMyWpywgf5CjWSGVzyfsWDtxwP1rOHxtAMaLc&s=10 alt=" id="oneimage">
+                <p>Image from <a href="https://www.facebook.com/mjbauerphotography/posts/this-sunset-at-deadhorse-state-park-in-utah-stands-out-as-one-of-the-most-memora/1494761902650430/"target blank>Fasebook</a></p>
+            </div>
+            <div id="twoimg">
+                <img src="https://media.istockphoto.com/id/627089616/photo/blm-land-looking-at-dead-horse-point-state-park-utah.jpg?s=612x612&w=0&k=20&c=x3fQ1I2CLob9PHgPMOtJlURWrLM6S_m0xWjoZKi6_7E=" id="twoimage">
+                <p>Image from <a href="https://www.istockphoto.com/photos/dead-horse-point-state-park-sunset"target blank>iStock</a></p>
+            </div>
+            <div id="threeimg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7s5Z_AS_fANzMdubh6kYJpzQIxTAJXXop-ObZmfl0mZAPQ_-sFBZbGRE_&s=10" id="threeimage">
+                <p>Image from <a href="https://www.instagram.com/p/DVZfsXVEpI6/"target blank>instagram</a></p>
+            </div>
         </div>
-         <div id="twoimg">
-            <img src="https://media.istockphoto.com/id/627089616/photo/blm-land-looking-at-dead-horse-point-state-park-utah.jpg?s=612x612&w=0&k=20&c=x3fQ1I2CLob9PHgPMOtJlURWrLM6S_m0xWjoZKi6_7E=" id="twoimg">
-            <p>Image from <a href="https://www.istockphoto.com/photos/dead-horse-point-state-park-sunset"target blank>iStock</a></p>
+        <div id="box">
+            <div id="boxtwo">
+                <h2 id="other">Common activities include:</h2>
+            <ul>
+                <li>Hiking trails leading to over 8 canyon viewpoints</li>
+                <li>Mountain Biking to new destinations</li>
+                <li>Campgrounds with Sightseeing and stargazing</li>
+                <li>Picnic pavilions and dog friendly walks</li>
+            </ul>
+            </div>
         </div>
-        <div id="threeimg">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7s5Z_AS_fANzMdubh6kYJpzQIxTAJXXop-ObZmfl0mZAPQ_-sFBZbGRE_&s=10" id="twoimg">
-            <p>Image from <a href="https://www.instagram.com/p/DVZfsXVEpI6/"target blank>instagram</a></p>
-        </div>
-            <div id="box">
-        <h2 id="other">Common activities include:</h2>
-        <ul>
-            <li>Hiking trails leading to over 8 canyon viewpoints</li>
-            <li>Mountain Biking to new destinations</li>
-            <li>Campgrounds with Sightseeing and stargazing</li>
-            <li>Picnic pavilions and dog friendly walks</li>
-            
-        </ul>
-       
     </body>
 </html>
