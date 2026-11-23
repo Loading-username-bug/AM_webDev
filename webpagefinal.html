@@ -8,8 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <style>               
              body{
-                display:flex;
-                flex-direction: column;
                 background-color:rgb(197, 173, 216);
                 margin: 20px;
                 padding: 0px
@@ -20,15 +18,14 @@
                 font-family: "IBM Plex Serif", serif;
                 font-weight: 400;
                 font-style: normal;
-                margin: 20px;
+                margin-top: 1%;
+                margin-bottom: -15px;
                 padding: 20px;
                 
             }
             #tiimage{
                 width: 100%;
                 height: 10%;
-                
-
             }
             #oneimg{
                 display:flex;
@@ -76,28 +73,35 @@
             }
            #box{
             padding-top: 50px;
-           }
-            #boxtwo{
-                background-color:rgb(114, 78, 122);
+            background-color:rgb(114, 78, 122);
                 width: 30%;
                 height: 90%;
                 border-radius: 8px;
                 margin: 20px;
-                padding:10px;
-                justify-content: center;
+                padding:30px;
                 justify-content: space-between;
-            }
+           }
+    
             #line{
-                height:0px;
-                border: solid 2px lightgrey;
+                border: none;
+                height: 5px;
+                background-color: white;
+                margin-top: 0px;
+                margin-bottom: 5%;
             }
-            #textone{
+            #text{
                 background-color:rgb(114, 78, 122);
                 border-radius: 8px;
+                border: solid, 5px lightgrey;
+                margin-bottom: 4%;
+                padding: 5%
             }
-            #texttwo{
-                background-color:rgb(114, 78, 122);
-                border-radius: 8px;
+            #boxestwins{
+                display: flex;
+                margin-top: 10%;
+                justify-content: center;
+        
+
             }
         </style>
     </head>
@@ -106,12 +110,14 @@
             <img src="https://www.bestwestern.com/content/dam/best-western/hero-image/destinations/united-states/utah/canyonlands-national-park-1140x300.jpg" id="tiimage">
             <p>Image from <a href="https://www.bestwestern.com/en_US/hotels/destinations/united-states/rocky-mountain/hotels-in-utah/things-to-do/outdoor-adventure/national-parks/canyonlands-national-park.html"target blank>Best Western</a></p>
         </div>
-        <h1 id="title">Dead Horse Point<hr id="line"></h1> 
-        
-        <h3 id="history">All About</h3>
-        <p id="textone">This National Park is a definitly worth the trip. While you are there you will see 2,000ft worth of sheer cliff that reveal red rocks, winding rivers, magnificent veiws of sunsets and a lifes worth of star gazing. Lots of adventure and learning experiences. Garenteed to change you life.</p> <!-- <p> is general text-->
-        <h3 id="now">Why you should plan your trip now</h3>
-        <p id="texttwo"> This is a life changing experiance guarenteed. A very family friendly area and a good escape from stress. You are guarenteed to have a fun time while your there. With all of the fun activities to do, how could you not? I mean just look at these veiws, absolutely breathtaking.</p>
+        <h1 id="title">Dead Horse Point</h1> 
+        <hr id="line">
+        <div id="text">
+            <h3 id="history">All About</h3>
+            <p id="textone">This National Park is a definitly worth the trip. While you are there you will see 2,000ft worth of sheer cliff that reveal red rocks, winding rivers, magnificent veiws of sunsets and a lifes worth of star gazing. Lots of adventure and learning experiences. Garenteed to change you life.</p> <!-- <p> is general text-->
+            <h3 id="now">Why you should plan your trip now</h3>
+            <p id="texttwo"> This is a life changing experiance guarenteed. A very family friendly area and a good escape from stress. You are guarenteed to have a fun time while your there. With all of the fun activities to do, how could you not? I mean just look at these veiws, absolutely breathtaking.</p>
+        </div>
         <div id="images">
             <div id="oneimg">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhSNtaT88mq7q_GahntZyMyWpywgf5CjWSGVzyfsWDtxwP1rOHxtAMaLc&s=10 alt=" id="oneimage">
@@ -126,15 +132,24 @@
                 <p>Image from <a href="https://www.instagram.com/p/DVZfsXVEpI6/"target blank>instagram</a></p>
             </div>
         </div>
-        <div id="box">
-            <div id="boxtwo">
-                <h2 id="other">Common activities include:</h2>
-            <ul>
-                <li>Hiking trails leading to over 8 canyon viewpoints</li>
-                <li>Mountain Biking to new destinations</li>
-                <li>Campgrounds with Sightseeing and stargazing</li>
-                <li>Picnic pavilions and dog friendly walks</li>
-            </ul>
+        <div id="boxestwins">
+            <div id="box">
+                    <h2 id="other">Common activities include:</h2>
+                <ul>
+                    <li>Hiking trails leading to over 8 canyon viewpoints</li>
+                    <li>Mountain Biking to new destinations</li>
+                    <li>Campgrounds with Sightseeing and stargazing</li>
+                    <li>Picnic pavilions and dog friendly walks</li>
+                </ul>
+            </div>
+            <div id="box">
+                        <h2 id="other">Common activities include:</h2>
+                <ul>
+                    <li>Hiking trails leading to over 8 canyon viewpoints</li>
+                    <li>Mountain Biking to new destinations</li>
+                    <li>Campgrounds with Sightseeing and stargazing</li>
+                    <li>Picnic pavilions and dog friendly walks</li>
+                </ul>
             </div>
         </div>
     </body>
